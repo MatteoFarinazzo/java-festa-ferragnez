@@ -36,6 +36,8 @@ public class CheckGuest {
                 break;}
             i++;}
 
+            // prova commento
+
 
             if (match){
                 System.out.println("Benvenuto, puoi entrare!");
