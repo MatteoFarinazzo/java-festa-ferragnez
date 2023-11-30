@@ -40,7 +40,9 @@ public class CheckGuest {
             if (match){
                 System.out.println("Benvenuto, puoi entrare!");
             } else {
+
                 System.out.println( name + " " + "Vattene via da qui, questa è una festa privata!");
+
             }
 
             scanner.close();
