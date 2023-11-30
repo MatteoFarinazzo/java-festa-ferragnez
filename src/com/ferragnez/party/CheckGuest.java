@@ -12,19 +12,35 @@ public class CheckGuest {
             System.out.println("Digita il tuo nome e cognome");
             String name = scanner.nextLine();
 
-            Boolean match = false;
+            boolean match = false;
 
+
+            // con ciclo for
+
+            /*
             for (int i = 0; i < arrayGuests.length && !match ; i++) {
 
                 if (arrayGuests[i].equals(name)){
                     match = true;
                 }
             }
+            */
+
+            // con ciclo while
+
+            int i = 0;
+
+            while (i < arrayGuests.length){
+                if (arrayGuests[i].equals(name)){
+                    match = true;
+                break;}
+            i++;}
+
 
             if (match){
                 System.out.println("Benvenuto, puoi entrare!");
             } else {
-                System.out.println("Vattene via da qui, questa è una festa privata!");
+                System.out.println( name + " " + "Vattene via da qui, questa è una festa privata!");
             }
 
             scanner.close();
